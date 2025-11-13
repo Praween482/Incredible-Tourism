@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Map — Incredible Tourism</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+  <div class="site-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">Incredible Tourism • North India</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="map.html">Map</a>
+        <a href="states.html">States</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-section">
+    <h2 style="color:whitesmoke">Interactive Map</h2>
+    <p class="small-muted">Embedded Google Map. Click a place in the list to focus the map on it. Use browser back to return to cards.</p>
+
+    <div class="map-wrapper" style="margin-top:12px">
+      <iframe id="mapFrame"
+        src="https://www.google.com/maps?q=28.0,77.5&z=5&output=embed"
+        allowfullscreen loading="lazy"></iframe>
+    </div>
+
+    <section style="margin-top:18px;display:grid;grid-template-columns:1fr;gap:12px;">
+      <div style="color:var(--muted)">
+        <h3 style="color:whitesmoke">Places</h3>
+        <div id="placesList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Map uses Google Maps embed (no API key required for this demo).</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
